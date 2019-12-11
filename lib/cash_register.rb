@@ -3,6 +3,7 @@ class CashRegister
     @total = 0 
     @discount= disc 
   end
+  @items = []
   
   attr_accessor :discount, :total
   
@@ -19,6 +20,8 @@ class CashRegister
     end
   end
   
-  
+  def items
+    @tems 
+  end
   
 end
