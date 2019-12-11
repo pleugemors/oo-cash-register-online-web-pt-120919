@@ -6,4 +6,8 @@ class CashRegister
   
   attr_accessor :discount, :total
   
+  def add_item(title, price, quantity = 1 )
+    
+  end 
+  
 end
