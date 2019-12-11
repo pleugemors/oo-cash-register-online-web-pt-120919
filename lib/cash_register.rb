@@ -25,11 +25,8 @@ class CashRegister
   end
   
   def void_last_transaction
-    print @items
     @total -= @last_trans[0]
     @last_trans[2].times {@items.delete(@last_trans[1])}
-    puts 
-    print @items
   end
   
 end
