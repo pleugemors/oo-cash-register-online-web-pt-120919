@@ -10,4 +10,8 @@ class CashRegister
     @total += quantity*price 
   end 
   
+  def apply_discout
+    @total -= (@total*@discount/100.0)
+  end
+  
 end
