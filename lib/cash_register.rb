@@ -26,7 +26,7 @@ class CashRegister
   
   def void_last_transaction
     @total -= @last_trans[0]
-    
+    @last_trans[2].times {@items.delete(@last_trans[1])}
   end
   
 end
