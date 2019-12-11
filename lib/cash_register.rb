@@ -8,7 +8,8 @@ class CashRegister
   attr_accessor :discount, :total
   
   def add_item(title, price, quantity = 1 )
-    @total += quantity*price 
+    @total += quantity*price
+    @items << title 
   end 
   
   def apply_discount
