@@ -1,7 +1,7 @@
 class CashRegister
-  def initialize(disc="0")
+  def initialize(disc)
     @total = 0 
-    discount= disc.to_i 
+    discount= disc 
   end
   
   attr_accessor :discount
