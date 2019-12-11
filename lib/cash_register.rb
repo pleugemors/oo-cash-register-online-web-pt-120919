@@ -9,10 +9,10 @@ class CashRegister
   attr_accessor :discount, :total, :items 
   
   def add_item(title, price, quantity = 1 )
-    @total += quantity*price
+    @total += quantity*price 
     quantity.times {@items << title}  
-    groceries = []
-    quantity.times {groceries << title
+    @last_trans= [sub_tot, title, quantity]
+    
   end 
   
   def apply_discount
