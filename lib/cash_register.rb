@@ -1,9 +1,9 @@
 class CashRegister
   def initialize(disc = 0 )
     @total = 0 
-    discount= disc 
+    @discount= disc 
   end
   
-  attr_accessor :discount
+  attr_accessor :discount, :total
   
 end
